@@ -1,0 +1,22 @@
+Serial monitor excerpt from the RS485 pair test on 25 October 2026. All six directional trial results are included; unrelated boot lines and raw-byte dumps are omitted.
+
+I (177) app_init: ELF file SHA256:  044a00d86...
+I (181) app_init: ESP-IDF:          v6.1
+I (253) rs485_pair: PAIR TEST: boot nonce=D95D42ACE31C255A
+I (253) rs485_pair: U1 TX17/RX18, U2 TX16/RX21; 9600 8N1; console U0 115200
+I (263) rs485_pair: Three rounds only; starting after 3000 ms
+I (263) rs485_pair: USB-RS485 and sensor must be disconnected
+I (3313) rs485_pair: U2 exact current marker received
+I (3313) rs485_pair: Round 1 U1->U2 PASS
+I (3373) rs485_pair: U1 exact current marker received
+I (3373) rs485_pair: Round 1 U2->U1 PASS
+I (3913) rs485_pair: U2 exact current marker received
+I (3913) rs485_pair: Round 2 U1->U2 PASS
+I (3973) rs485_pair: U1 exact current marker received
+I (3973) rs485_pair: Round 2 U2->U1 PASS
+I (4513) rs485_pair: U2 exact current marker received
+I (4513) rs485_pair: Round 3 U1->U2 PASS
+I (4573) rs485_pair: U1 exact current marker received
+I (4573) rs485_pair: Round 3 U2->U1 PASS
+I (4573) rs485_pair: SUMMARY U1->U2 3/3 PASS; U2->U1 3/3 PASS
+I (4583) rs485_pair: DONE: no further bus transmissions; reset to run again
