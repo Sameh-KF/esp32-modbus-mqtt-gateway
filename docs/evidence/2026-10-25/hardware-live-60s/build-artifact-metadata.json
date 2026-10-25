@@ -1,0 +1,15 @@
+{
+  "provenance": "SHA-256 hashes and sizes recorded from the ESP-IDF build artifacts.",
+  "project": "industrial_gateway",
+  "target": "esp32s3",
+  "idf": "v6.1",
+  "artifact_time_utc": "2026-10-25T13:04:50Z",
+  "elf_sha256": "85BB0F923781AA4B514EF0D64AB45E3E807B7382B950D47EF1BE07716D894890",
+  "elf_bytes": 10054848,
+  "bin_sha256": "4ADCCB81B1CFF037EBEF414D6C81C856348EF21F62F66850197CF24B5C626C35",
+  "bin_bytes": 949408,
+  "factory_offset": "0x10000",
+  "factory_bytes": 2097152,
+  "flashed_elf_hash_matched": false,
+  "note": "The recorded MQTT boot ID identifies a runtime session; it is separate from the firmware artifact hash."
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "device_id": "gw-01",
+  "run_id": "20261025-130058-027-f16ebe",
+  "expected_source_mode": "hardware",
+  "hardware_link_accepted": true,
+  "banner": "HARDWARE · ESP32 / RS485",
+  "validation_scope": "Hardware telemetry accepted from ESP32 / RS485. Full gateway validation requires separate evidence.",
+  "receiver_ts_utc": "2026-10-25T13:38:41.354Z",
+  "broker_state": "connected",
+  "gateway_state": "online",
+  "source_state": "healthy",
+  "source_mode": "hardware",
+  "measurement_state": "fresh",
+  "sample_age_ms": 1593,
+  "values": {
+    "temperature_c": 25.9,
+    "humidity_pct": 55.5
+  },
+  "last_sample": {
+    "capture_utc": "2026-10-25T13:38:39.768Z",
+    "boot_id": "e2d3a5f015ebebed67dd5b46f1e3d55b",
+    "seq": 869,
+    "source_mode": "hardware"
+  },
+  "diagnostics": {
+    "uptime_ms": 1712404,
+    "read_success": 819,
+    "read_error": 37,
+    "wifi_attempts": 2,
+    "mqtt_attempts": 1,
+    "dropped": 2,
+    "expired": 0,
+    "puback": 911,
+    "last_good_age_ms": 270,
+    "free_heap_bytes": 260268
+  },
+  "counters": {
+    "accepted": 977,
+    "good": 938,
+    "bad": 37,
+    "rejected": 6,
+    "duplicate": 0,
+    "reordered": 0,
+    "replay": 4,
+    "expired": 0
+  },
+  "last_rejected": {
+    "reason": "unproven_new_session",
+    "at_utc": "2026-10-25T13:09:45.987Z"
+  }
+}

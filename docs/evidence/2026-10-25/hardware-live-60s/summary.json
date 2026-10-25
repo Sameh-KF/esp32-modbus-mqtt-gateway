@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "capture_run_id": "20261025-132638-fa9e1096",
+  "started_at_utc": "2026-10-25T13:26:38.527Z",
+  "finished_at_utc": "2026-10-25T13:27:38.537Z",
+  "requested_seconds": 60.0,
+  "mqtt_endpoint": "127.0.0.1:1883",
+  "connected": true,
+  "capture_error": null,
+  "counts": {
+    "mqtt_messages": 33,
+    "telemetry_messages": 30,
+    "accepted_hardware_good": 30,
+    "accepted_hardware_bad": 0,
+    "rejected_telemetry": 0,
+    "availability_messages": 1,
+    "diagnostic_messages": 2
+  },
+  "source_modes": {
+    "hardware": 30
+  },
+  "reject_reasons": {},
+  "boots": {
+    "e2d3a5f015ebebed67dd5b46f1e3d55b": {
+      "first_seq": 509,
+      "last_seq": 538,
+      "messages": 30,
+      "good": 30,
+      "bad": 0
+    }
+  },
+  "last_availability": {
+    "value": "online",
+    "retained": true,
+    "received_ms": 1792934798534.574
+  },
+  "first_good": {
+    "boot_id": "e2d3a5f015ebebed67dd5b46f1e3d55b",
+    "seq": 509,
+    "sample_ts_utc": "2026-10-25T13:26:39.748Z",
+    "received_ms": 1792934799841.002,
+    "effective_age_ms": 93.001953125,
+    "values": {
+      "temperature_c": 25.7,
+      "humidity_pct": 55.9
+    }
+  },
+  "last_good": {
+    "boot_id": "e2d3a5f015ebebed67dd5b46f1e3d55b",
+    "seq": 538,
+    "sample_ts_utc": "2026-10-25T13:27:37.848Z",
+    "received_ms": 1792934857937.124,
+    "effective_age_ms": 89.1240234375,
+    "values": {
+      "temperature_c": 25.7,
+      "humidity_pct": 55.8
+    }
+  },
+  "age_ms": {
+    "min": 22.8779296875,
+    "max": 117.531982421875,
+    "mean": 78.09629720052084
+  },
+  "hardware_link_observed": true,
+  "full_gateway_validation": "not_established_by_a_traffic_capture_alone",
+  "clock_assumptions": "Receiver UTC is the PC system clock. Freshness checks publisher UTC and reported age against that clock; no independent clock-offset or NTP accuracy measurement.",
+  "identity_scope": "Hardware source and 32-hex boot identity are payload declarations, not cryptographic device attestation. This subscriber cannot prove physical origin against a deliberate forged publisher.",
+  "crc_scope": "Modbus CRC is checked by the ESP32 firmware; this capture observes MQTT JSON, not RS485 wire bytes."
+}
