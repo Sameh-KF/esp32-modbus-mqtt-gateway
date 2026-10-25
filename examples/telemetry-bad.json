@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "device_id": "gw-01",
+  "source_mode": "simulated",
+  "boot_id": "illustrative-session-a",
+  "seq": 2,
+  "slave_id": 1,
+  "uptime_ms": 7000,
+  "sample_ts_utc": null,
+  "time_valid": false,
+  "sample_age_ms": null,
+  "quality": "bad",
+  "values": null,
+  "error": "modbus_timeout"
+}

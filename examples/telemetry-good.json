@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "device_id": "gw-01",
+  "source_mode": "simulated",
+  "boot_id": "illustrative-session-a",
+  "seq": 1,
+  "slave_id": 1,
+  "uptime_ms": 5000,
+  "sample_ts_utc": "2026-10-18T12:00:00.000Z",
+  "time_valid": true,
+  "sample_age_ms": 20,
+  "quality": "good",
+  "values": {
+    "temperature_c": -5.2,
+    "humidity_pct": 48.7
+  },
+  "error": null
+}
