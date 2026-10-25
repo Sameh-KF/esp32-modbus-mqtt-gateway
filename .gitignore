@@ -1,0 +1,31 @@
+# Local configuration and credentials
+config/local*.json
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+
+# Local environments and generated files
+.venv/
+__pycache__/
+*.pyc
+build/
+sdkconfig
+sdkconfig.old
+
+# Local logs, captures, and editor state
+logs/
+*.log
+*.pcap
+.vscode/
+
+# Dependency directories
+node_modules/
+.runtime/
+dashboard/flows_cred.json
+dashboard/.flows.json.backup
+dashboard/.flows_cred.json.backup
+
+# Test run output; publish only reviewed reports under docs/evidence/
+test-results/

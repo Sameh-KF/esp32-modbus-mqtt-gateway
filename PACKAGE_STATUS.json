@@ -1,0 +1,11 @@
+{
+  "status": "physical_monitoring_gateway_validated",
+  "physical_sensor": "10_of_10_valid_crc",
+  "firmware_sdk_build": "esp_idf_6_1_build_artifacts_recorded",
+  "normal_path_capture": "60.010s_30good_0bad_0rejected",
+  "sensor_recovery": "manual_function_check_passed",
+  "gateway_restart_recovery": "manual_function_check_passed",
+  "recovery_timing": "not_measured",
+  "hardware_lwt": "not_captured",
+  "secrets_included": false
+}
