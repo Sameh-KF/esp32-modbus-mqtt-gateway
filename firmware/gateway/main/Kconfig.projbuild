@@ -1,0 +1,26 @@
+menu "Gateway WiFi"
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default ""
+    config ESP_WIFI_PASSWORD
+        string "WiFi password"
+        default ""
+endmenu
+
+menu "Gateway MQTT"
+    config APP_MQTT_URI
+        string "MQTT broker URI (without credentials)"
+        default "mqtt://192.168.1.10:1883"
+    config APP_MQTT_USERNAME
+        string "MQTT username"
+        default ""
+    config APP_MQTT_PASSWORD
+        string "MQTT password"
+        default ""
+endmenu
+
+menu "Gateway clock"
+    config APP_SNTP_SERVER
+        string "SNTP server (LAN NTP or public host)"
+        default "pool.ntp.org"
+endmenu
