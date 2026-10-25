@@ -1,0 +1,44 @@
+{
+  "status": "hardware_normal_path_validated_2026_10_25",
+  "device_id": "gw-01",
+  "firmware_target": "esp32s3",
+  "poll_interval_ms": 2000,
+  "freshness_threshold_ms": 10000,
+  "sensor": {
+    "manufacturer": "Hailege",
+    "model": "H-1-1591",
+    "transport": "modbus_rtu",
+    "unit_id": 1,
+    "baud_rate": 9600,
+    "data_bits": 8,
+    "parity": "N",
+    "stop_bits": 1,
+    "register_map": {
+      "status": "physical_positive_read_verified_2026_10_25_no_calibration",
+      "function_code": 4,
+      "temperature_address": 1,
+      "temperature_encoding": "int16_big_endian",
+      "temperature_scale": 0.1,
+      "humidity_address": 2,
+      "humidity_encoding": "uint16_big_endian",
+      "humidity_scale": 0.1
+    }
+  },
+  "uart": {
+    "tx_gpio": 17,
+    "rx_gpio": 18,
+    "direction_mode": "xy485_auto_direction_at_3v3_uart_mode",
+    "direction_gpio": null
+  },
+  "mqtt": {
+    "host": "REPLACE_WITH_BROKER_HOST_REACHABLE_FROM_GATEWAY",
+    "port": 1884,
+    "topic_prefix": "industrial/gw-01",
+    "telemetry_qos": 1,
+    "telemetry_retained": false,
+    "availability_retained": true,
+    "keepalive_s": 15,
+    "credentials": "local_secrets_file_not_committed"
+  },
+  "validation_record": "docs/HARDWARE_GATEWAY_VALIDATION_2026-10-25.md"
+}
