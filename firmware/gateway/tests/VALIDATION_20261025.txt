@@ -1,0 +1,7 @@
+Host protocol and payload test record - 2026-10-25
+Actual tests: tests/run_host_tests.ps1 using MinGW gcc (C11,-Wall,-Wextra,-Wpedantic,-Wconversion,-Werror,-O2) and Python3.14 json parser.
+PASS: 100235 assertions; 20,000 generated valid frames; 20,000 random frames; 72 single-bit corruption cases.
+PASS: 4 generated JSON payloads parsed and checked (zero, negative, BAD, unsynchronized clock); overflow and invalid inputs also rejected in C.
+This session covers host protocol and payload checks. Subsequent ESP32-S3 hardware integration results are recorded in docs/HARDWARE_GATEWAY_VALIDATION_2026-10-25.md at the repository root.
+Local API sources reviewed: ESP-IDF6.1 esp_driver_uart/uart.h+uart.c, esp_netif/esp_netif_sntp.h, esp_wifi station example; cached espressif/mqtt1.1.0 include/mqtt_client.h, mqtt_client.c, Kconfig and CMakeLists.txt.
+Important reviewed MQTT behavior: stop() sends DISCONNECT when connected. Live clients are not intentionally stopped merely for ACK delay. Outbox expiry=3000ms, report-deleted enabled, retransmit=10000ms, limit=2048; one application QoS1 slot covers availability, telemetry and diagnostics. Auto reconnect disabled; destruction on a disconnected session prevents old client outbox recovery.
